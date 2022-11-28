@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/moon-icon-png.webp">
+    <script src="main.js"></script>
+    <title>Fav apps</title>
+</head>
+<body id="body">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/profile_picture.jpeg"></a>
+            <p>clement</p>
+        </div>
+       <ul>
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="https://github.com/Marin-Clement" target="_blank">GIT</a></li>
+       </ul>
+    </header>
+    <section id="background">
+        <img src="images/stars.png" id="stars" >
+        <img src="images/moon.png" id="moon">
+        <img src="images/back.png" id="forest">
+        <h2 id="text">Fav-Apps</h2>
+        <div class="button-container" id="btn">
+            <a href="#spotify" class="button-spotify">Spotify</a>
+            <a href="#youtube" class="button-youtube">Youtube</a>
+            <a href="#twitter" class="button-twitter">Twitter</a>
+        </div>
+        <img src="images/front-tree.png" id="mountains_front">
+    </section>
+    <section class="sec" id="spotify">
+        <article id="spotify-content">
+            <div class="title reveal">
+                <img src="images/Spotify_logo_without_text.svg.png" alt="spotify logo">
+                <h1>Spotify</h1>
+            </div>
+            <p class="reveal">
+                Spotify est un service de musique numérique, de balados et de vidéos qui vous donne un accès instantané à des millions de chansons et d'autres contenus de créateurs du monde entier . . .
+            </p>
+            <a class="button-glitch-spotify reveal" onclick="redirect_Spotify()">
+                EN SAVOIR PLUS >
+            </a>
+        </article>
+    </section>
+    <section class="sec" id="youtube">
+        <article id="youtube-content">
+            <div class="title reveal">
+                <img src="images/youtube.png" style="border-radius: 0px;" alt="youtube logo">
+                <h1>Youtube</h1>
+            </div>
+            <p class="reveal">
+                YouTube est un site web d'hébergement de vidéos et média social sur lequel les utilisateurs peuvent envoyer, regarder, commenter, évaluer et partager des vidéos en streaming.            
+            </p>
+            <a class="button-glitch-youtube reveal" onclick="redirect_Youtube()">
+                EN SAVOIR PLUS >
+            </a>
+        </article>
+    </section>
+    <section class="sec" id="twitter">
+        <article id="twitter-content">
+            <div class="title reveal">
+                <img src="images/twitter.png" style="border-radius: 0px;" alt="twitter logo">
+                <h1>Twitter</h1>
+            </div>
+            <p class="reveal">
+                Twitter est un réseau social de microblogage géré par l'entreprise Twitter Inc. Il permet à un utilisateur d’envoyer gratuitement des micromessages, appelés tweets, sur internet, par messagerie instantanée ou par SMS. Ces messages sont limités à 280 caractères  . . .        
+            </p>
+            <a class="button-glitch-twitter reveal" onclick="redirect_Twitter()">
+                EN SAVOIR PLUS >
+            </a>
+        </article>
+    </section>
+</body>
+</html>

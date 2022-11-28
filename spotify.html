@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="icon" href="images/Spotify_logo_without_text.svg.png">
+    <script src="spotify.js"></script>
+    <title>Spotify</title>
+</head>
+<body id="body">
+    <header id="header">
+        <div class="logo">
+            <img src="images/Spotify_logo_without_text.svg.png">
+            <p>spotify</p>
+        </div>
+       <ul>
+        <li><a class="home" onclick="redirect_Home()">Home</a></li>
+        <li><a href="https://github.com/Marin-Clement" target="_blank">GIT</a></li>
+       </ul>
+    </header>
+    <section id="background">
+        <img src="images/Avicii.jpeg" id="back-image" alt="">
+        <section id="front-panel">
+            <section id="scroll-down">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </section>
+        </section>
+        <div id="loading-bar-container">
+            <div class="loading-bar">
+                <div id="loading_bar_fill">
+                    <div id="loading_circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <section class="panel">
+        <div id="playlist-container1">
+            <article class="playlist">
+                <img src="album-cover/avicii-album.jpg" alt="">
+                <h1>The Days</h1>
+                <p>Avicii</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/come-over.jpg" alt="">
+                <h1>Come Over When Y..</h1>
+                <p>Lil Peep </p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/the chemical.jpeg" alt="">
+                <h1>Exit Planet Dust</h1>
+                <p>The Chemical Brothers</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/todd terje.jpeg" alt="">
+                <h1>It’s Album Time</h1>
+                <p>Todd Terje</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/sun-electric.jpeg" alt="">
+                <h1>Present</h1>
+                <p>Sun Electric</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/autechre.jpg" alt="">
+                <h1>Draft 7.30</h1>
+                <p>Autechre</p>
+            </article>
+        </div>
+    </section>
+    <section class="panel">
+        <div id="playlist-container2">
+            <article class="playlist">
+                <img src="album-cover/happy Mond.jpeg" alt="">
+                <h1>Bummed</h1>
+                <p>Happy Mondays</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/boards.jpeg" alt="">
+                <h1>Geogaddi</h1>
+                <p>Boards of Canada</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/the klf.jpeg" alt="">
+                <h1>Chill Out</h1>
+                <p>The KLF</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/KMFDM.jpeg" alt="">
+                <h1>Angst</h1>
+                <p>KMFDM</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/klaxons.jpeg" alt="">
+                <h1>Surfing the Void</h1>
+                <p>Klaxons</p>
+            </article>
+            <article class="playlist">
+                <img src="album-cover/tim.jpg" alt="">
+                <h1>TIM</h1>
+                <p>Avicii</p>
+            </article>
+        </div>
+    </section>
+    <section id="presentation-div">
+        <article id="artists">
+            <h1 class="reveal">Des millions d'Artistes</h1>
+        </article>
+        <section id="artists-container" class="reveal">
+            <article class="artists-info">
+                <img src="album-cover/avicii.jpg" alt="">
+                <h1>avicii</h1>
+            </article>
+            <article class="artists-info">
+                <img src="album-cover/martin.jpg" alt="">
+                <h1>martin garrix</h1>
+            </article>
+            <article class="artists-info">
+                <img src="album-cover/kygo.jpg" alt="">
+                <h1>kygo</h1>
+            </article>
+        </section>
+    </section>
+    <section id="presentation-div2">
+        <article id="artists">
+            <h1 class="reveal right">Des millions de playlists</h1>
+        </article>
+        <section id="artists-container" class="reveal right">
+            <article class="playlist-info">
+                <img src="album-cover/eurobeat.jpg" alt="">
+                <h1>super eurobeat mix</h1>
+                <p>space boy</p>
+                <p>deja vu</p>
+                <p>Night & days</p>
+            </article>
+            <article class="playlist-info">
+                <img src="album-cover/k-pop.jpg" alt="">
+                <h1>K-pop mix</h1>
+                <p>love letter</p>
+                <p>day & light</p>
+                <p>starlight</p>
+            </article>
+            <article class="playlist-info">
+                <img src="album-cover/sad.jpg" alt="">
+                <h1>Sad playlist</h1>
+                <p>why am i so sad</p>
+                <p>i dont know</p>
+                <p>your right</p>
+            </article>
+        </section>
+    </section>
+    <section id="presentation-premium">
+        <h1 class="reveal">Pourquoi passer à Spotify Premium ?</h1>
+        <section id="premium-container">
+            <article class="premium-info reveal">
+                <img src="images/downloadmusic.png" alt="">
+                <h2>Téléchargez votre musique.</h2>
+                <p>Écoutez votre musique partout.</p>
+            </article>
+            <article class="premium-info reveal">
+                <img src="images/ads.png" alt="">
+                <h2>Savourez votre musique sans pub.</h2>
+                <p>Profitez de vos titres sans interruption.</p>
+            </article>
+            <article class="premium-info reveal">
+                <img src="images/song.png" alt="">
+                <h2>Écoutez les titres de votre choix.</h2>
+                <p>Même sur votre mobile.</p>
+            </article>
+            <article class="premium-info reveal">
+                <img src="images/zap.png" alt="">
+                <h2>Zapping à l'infini.</h2>
+                <p>Cliquez simplement sur suivant.</p>
+            </article>
+        </section>
+    </section>
+    <section id="presentation-price">
+        <h1 class="reveal right">tout ça pour</h1>
+        <p class="reveal">9,99 € par mois.</p>
+    </section>
+    <section id="suscribe" class="reveal bottom">
+        <a href="https://www.spotify.com/fr/signup" target="_blank" id="suscribe-button">S'abonner</a>
+    </section>
+    <i class="arrow up" onclick="scrollToTop()"></i> 
+</body>
+</html>

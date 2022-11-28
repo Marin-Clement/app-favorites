@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    background: #000000;
+}
+body{
+    animation: fadeInAnimation ease 0.8s;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+    opacity: 1;
+    transition: 1s;
+}
+.fadeout{
+    opacity: 0;
+}
+.scaleout{
+    scale: 0;
+    transition: 1.5s;
+}
+header{
+    animation: scaleInAnimation ease 1.2s;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img{
+    width: 12vh;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.2);
+}
+header .logo p{
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    cursor: pointer;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.home{
+    color: #2b1055;
+    background: #fff;
+    transition: 0.2s; 
+}
+.home:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: 3px -3px 0px 1px rgb(255, 255, 255);
+}
+header ul li a:hover{
+    color: #2b1055;
+    background: #fff;
+}
+#background{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#background img#moon{
+    mix-blend-mode: screen;
+}
+#background img#forest{
+    top: 0px;
+}
+#background img#mountains_front{
+    top: 40%;
+    z-index: 10;
+}
+#text{
+    right: -40%;
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.sec{
+    position: relative;
+    padding: 120px;
+    background: #000130;
+}
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+#btn{
+    animation: fadeInAnimation ease 2s;
+    position: absolute;
+    padding-left: 1%;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50px);
+}
+.button-spotify{
+    z-index: 9;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    background: #1db954;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-youtube{
+    z-index: 9;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-twitter{
+    z-index: 9;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    background: #00acee;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-spotify:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: -4px -3px 0px 2px rgb(34, 255, 34);
+}
+.button-youtube:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: 0px -3px 0px 1px rgb(255, 0, 0);
+}
+.button-twitter:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: 4px -3px 0px 1px rgb(0, 229, 255);
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.title img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+#spotify h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #1db954;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 15px;
+    margin-bottom: 20px;
+}
+#spotify p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    width: 80%;
+}
+#youtube h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #ff0000;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 15px;
+    margin-bottom: 20px;
+}
+#youtube p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    width: 80%;
+}
+#twitter h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #00acee;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 15px;
+    margin-bottom: 20px;
+}
+#twitter p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    width: 80%;
+}
+.button-glitch-spotify{
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 350px;
+    height: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, transparent 5%, #1db954 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #ffffff;
+    outline: transparent;
+    transition: 0.3s;
+}
+.button-glitch-spotify:hover{
+    box-shadow: 20px -5px 0px #ffffff;
+}
+.button-glitch-youtube{
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 350px;
+    height: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, transparent 5%, #ff0000 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #ffffff;
+    outline: transparent;
+    transition: 0.3s;
+}
+.button-glitch-youtube:hover{
+    box-shadow: 20px -5px 0px #ffffff;
+}
+.button-glitch-twitter{
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 350px;
+    height: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, transparent 5%, #00acee 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #ffffff;
+    outline: transparent;
+    transition: 0.3s;
+}
+.button-glitch-twitter:hover{
+    box-shadow: 20px -5px 0px #ffffff;
+}
+.reveal{
+    position: relative;
+    transform: translate(-250px);
+    margin-left: -500px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translate(0px);
+    margin-left: 0px;
+    opacity: 1;
+}  
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+      }
+  100% {
+       opacity: 1;
+     }
+}
+@keyframes scaleInAnimation {
+    0% {
+        scale: 0;
+        }
+    100% {
+        scale: 1;
+       }
+  }
